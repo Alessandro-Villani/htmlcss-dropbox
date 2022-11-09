@@ -1,4 +1,4 @@
-/* CSS RESET */
+/* !CSS RESET */
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-boxDropb;
 }
 
-/* CUSTOM PROPERTIES */
+/* !CUSTOM PROPERTIES */
 
 :root {
     --blue: rgb(0,97,255);
@@ -21,8 +21,84 @@
     --yellow: rgb(255,216,48);
 }
 
-/* GENERICS */
+/* !GENERICS */
 
 body{
     font-family: 'Open Sans', sans-serif;
+    padding-top: 80px;
 }
+
+h1{
+    font-size: 72px;
+}
+
+/* !UTILS */
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container.big{
+    max-width: 1200px;
+}
+
+.debug {
+    border: 1px dashed black;
+}
+
+.flex {
+    display: flex;
+}
+
+/* !HEADER */
+
+    /* NAVBAR */ 
+
+    header nav{
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: blue;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidenav{
+        background-color: blueviolet;
+        height: 100%;
+        width: 30%;
+    }
+
+    /* JUMBOTRON */
+
+    .jumbotron{
+        min-height: 600px;
+        background-color: var(--skyblue);
+        padding-top: 100px;
+    }
+
+    .jumbotron .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron .row{
+        flex: 1 0 500px;
+        width: 100%;
+    }
+
+    .jumbotron .description{
+        flex-basis: 30%;
+        background-color: brown;
+    }
+
+    .jumbotron figure{
+        flex-basis: 70%;
+        background-color: chartreuse;
+    }
+
+
+
