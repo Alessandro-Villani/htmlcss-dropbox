@@ -63,6 +63,10 @@ h2{
     border: 1px dashed black;
 }
 
+.debug.white{
+    border-color: white;
+}
+
 
 /* !HEADER */
 
@@ -131,7 +135,7 @@ h2{
         gap: 50px;
     }
 
-    .flex .col{
+    .business-plan .col{
         flex-basis: calc(100%/3);
         min-height: 800px;
         background-color: cadetblue;
@@ -162,7 +166,7 @@ h2{
 
     /* OPERATIONS SECTION */
 
-    .operations .column{
+    .operations .col{
         min-height: 500px;
         flex-basis: calc(100%/3);
         background-color: cadetblue;
@@ -247,6 +251,40 @@ h2{
     .fa-angle-down{
         padding: 0 20px;
     }
+
+/* !FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 150px;
+    height: 600px;
+}
+
+footer .container{
+    height: 100%;
+}
+
+.footer-top{
+    height: 80%;
+    padding: 50px 0;
+}
+
+.footer-bottom{
+    height: 20%;
+}
+
+.footer-top .col{
+    flex-basis: 20%;
+    height: 100%;
+    background-color: brown;
+}
+
+.language-selection{
+    height: 100%;
+    width: 15%;
+}
+
 
 
 
