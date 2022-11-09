@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-boxDropb;
+    box-sizing: border-box;
 }
 
 /* !CUSTOM PROPERTIES */
@@ -32,6 +32,10 @@ h1{
     font-size: 72px;
 }
 
+h2{
+    font-size: 50px;
+}
+
 /* !UTILS */
 
 .container{
@@ -43,13 +47,22 @@ h1{
     max-width: 1200px;
 }
 
+.flex {
+    display: flex;
+}
+
+.mb-150{
+    margin-bottom: 150px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 .debug {
     border: 1px dashed black;
 }
 
-.flex {
-    display: flex;
-}
 
 /* !HEADER */
 
@@ -98,6 +111,39 @@ h1{
     .jumbotron figure{
         flex-basis: 70%;
         background-color: chartreuse;
+    }
+
+/* !MAIN */
+
+    /* BUSINESS PLAN SECTION */
+
+    .option-selection{
+        min-height: 50px;
+        background-color: brown;
+    }
+
+    .business-plan .row{
+        width: 100%;
+        background-color: crimson;
+    }
+
+    .business-plan .row.flex{
+        gap: 50px;
+    }
+
+    .flex .col{
+        flex-basis: calc(100%/3);
+        min-height: 800px;
+        background-color: cadetblue;
+    }
+
+    .plan-type{
+        min-height: 40px;
+        background-color: chocolate;
+    }
+
+    .content {
+        min-height: 200px;
     }
 
 
