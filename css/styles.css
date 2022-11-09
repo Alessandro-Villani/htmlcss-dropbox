@@ -35,7 +35,7 @@ h1{
 }
 
 h2{
-    font-size: 42px;
+    font-size: 38px;
 }
 
 h3{
@@ -323,10 +323,18 @@ ul{
 
     /* OPERATIONS SECTION */
 
+    .operations{
+        font-size: 14px;
+    }
+
     .operations .col{
-        min-height: 500px;
+        min-height: 450px;
         flex-basis: calc(100%/3);
-        background-color: cadetblue;
+        padding: 0 15px;
+    }
+
+    .operations img{
+        max-width: 100%;
     }
 
     /* REVIEWS SECTION */
