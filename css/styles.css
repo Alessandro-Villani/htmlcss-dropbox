@@ -20,6 +20,7 @@
     --flashyred: rgb(255,28,28);
     --red: rgb(213,0,31);
     --yellow: rgb(255,216,48);
+    --gray: rgb(230,230,232);
 }
 
 /* !GENERICS */
@@ -35,6 +36,10 @@ h1{
 
 h2{
     font-size: 42px;
+}
+
+h3{
+    font-size: 22px
 }
 
 ul{
@@ -58,7 +63,7 @@ ul{
 /* !UTILS */
 
 .container{
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -68,6 +73,10 @@ ul{
 
 .flex {
     display: flex;
+}
+
+.mb-15{
+    margin-bottom: 15px;
 }
 
 .mb-20 {
@@ -80,6 +89,10 @@ ul{
 
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.gray-border{
+    border: 1px solid var(--gray);
 }
 
 .debug {
@@ -172,34 +185,111 @@ ul{
 
     /* BUSINESS PLAN SECTION */
 
+    .business-plan{
+        font-size: 14px;
+    }
+
     .option-selection{
-        min-height: 50px;
-        background-color: brown;
+        align-items: center;
+    }
+
+    .circle{
+        width: 20px;
+        height: 20px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .circle.selected{
+        border: 5px solid var(--blue);
+    }
+
+    .option-selection span{
+        margin-right: 50px;
     }
 
     .business-plan .row{
         width: 100%;
-        background-color: crimson;
     }
 
     .business-plan .row.flex{
-        gap: 50px;
+        gap: 40px;
     }
 
     .business-plan .col{
         flex-basis: calc(100%/3);
         min-height: 800px;
-        background-color: cadetblue;
+    }
+
+    .business-plan .button{
+        width: 100%;
+        text-align: center;
     }
 
     .plan-type{
-        min-height: 40px;
-        background-color: chocolate;
+        text-align: center;
+        padding: 5px 0;
+        border-bottom: 1px solid var(--gray);
     }
 
     .content {
         min-height: 200px;
+        padding: 25px 10px;
     }
+
+    .plan-name {
+        min-height: 85px;
+    }
+
+    .period{
+        color: gray;
+    }
+
+    .business-plan li{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .plan-specifics .fa-solid{
+        display: block;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+
+    .business-plan hr{
+        width: 20%;
+        height: 1px;
+        color: var(--gray);
+    }
+
+    .checkmark li::before{
+        content: '\f00c';
+        color: var(--blue);
+        font: var(--fa-font-solid);
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+
+    .content.bottom{
+        gap: 40px;
+    }
+
+    .content.bottom > *{
+        padding: 25px 10px;
+    }
+
+    .content.bottom .plan-name{
+        flex-basis: calc((100% / 3 *2 ) + (80px / 3 * 2));
+    }
+
+    .content.bottom .contact-us{
+        flex-basis: calc(100%/3);
+    }
+
+    
 
     /* PARTNER SECTION  */
 

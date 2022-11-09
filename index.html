@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME CSS IMPORT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- ICON AND TITLE -->
@@ -60,28 +63,118 @@
     <!-- MAIN -->
     <main>
         <!-- BUSINESS PLAN SECTION -->
-        <section class="business-plan container mb-150 debug">
-            <h2 class="mb-50 debug">Trova il piano business che fa per te</h2>
-            <div class="option-selection mb-50 debug">
-
+        <section class="business-plan container mb-150">
+            <h2 class="mb-50">Trova il piano business che fa per te</h2>
+            <div class="option-selection flex mb-50">
+                <div class="circle selected"></div>
+                <span>Fatturazione mensile</span>
+                <div class="circle"></div>
+                <span>Fatturazione annuale</span>
             </div>
-            <div class="row flex mb-50 debug">
-                <div class="col debug">
-                    <div class="plan-type debug"></div>
-                    <div class="content debug">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatum temporibus odio modi? Neque, consectetur inventore? Fuga delectus magnam aspernatur repudiandae consequatur? Dolore quibusdam fugiat doloremque beatae a, cumque exercitationem. </div>
+            <div class="row flex mb-50">
+                <div class="col gray-border">
+                    <div class="plan-type"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="content">
+                        <div class="plan-name mb-50">
+                            <h3 class="mb-15">Professional</h3>
+                            <div class="price"><strong>€ 12.00</strong></div>
+                            <div class="period">/mese</div>
+                        </div>
+                        <div class="plan-specifics mb-50">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> 1 utente</li>
+                                <li><i class="fa-solid fa-folder"></i> 5 TB du spazio di archiviazione sicuro</li>
+                                <li><i class="fa-solid fa-share-nodes"></i> Funzione di produttività premium e condivizione file semplice e sicura</li>
+                            </ul>
+                        </div>
+                        <div class="try-or-buy mb-50">
+                            <a href="#" class="button mb-20">Prova gratis per 30 giorni</a>
+                            <span>oppure <a href="#">acquista ora</a></span>
+                        </div>
+                        <hr class="mb-50">
+                        <div class="plan-details">
+                            <h4 class="mb-20">Punti salienti del piano</h4>
+                            <ul class="checkmark">
+                                <li><div>Invia file fino a 100 GB con Dropbox Transfert</div></li>
+                                <li><div>Cartelle offline su dispositivi mobili</div></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col debug">
-                    <div class="plan-type debug"></div>
-                    <div class="content debug">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque eligendi, dolor natus porro dolores corporis quia, magnam fugiat eaque necessitatibus a vero eius animi perspiciatis! Veritatis unde adipisci deleniti consequatur.</div>
+                <div class="col gray-border">
+                    <div class="plan-type"><i class="fa-solid fa-users"></i> Team</div>
+                    <div class="content">
+                        <div class="plan-name mb-50">
+                            <h3 class="mb-15">Advanced</h3>
+                            <div class="price"><strong>€ 18.00</strong></div>
+                            <div class="period">/utente/mese</div>
+                        </div>
+                        <div class="plan-specifics mb-50">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> 3 o più utente</li>
+                                <li><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il tuo team</li>
+                                <li><i class="fa-solid fa-share-nodes"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                            </ul>
+                        </div>
+                        <div class="try-or-buy mb-50">
+                            <a href="#" class="button mb-20">Prova gratis per 30 giorni</a>
+                            <span>oppure <a href="#">acquista ora</a></span>
+                        </div>
+                        <hr class="mb-50">
+                        <div class="plan-details">
+                            <h4 class="mb-20">Punti salienti del piano</h4>
+                            <ul class="checkmark">
+                                <li><div>Nessun limite di spazio per i file</div></li>
+                                <li><div>Cartelle offline su dispositivi mobili</div></li>
+                                <li><div>Risparmio del 50% rispetto alle iscrizioni singole</div></li>
+                                <li><div>Possibilità di inserire nuovi membri del team</div></li>
+                                <li><div>Gestione dei permessi in base ai ruoli</div></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col debug">
-                    <div class="plan-type debug"></div>
-                    <div class="content debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eaque eveniet provident distinctio a perspiciatis consequuntur hic, temporibus dolorem aut, asperiores voluptatum ipsum minima inventore accusamus! Maiores sunt id incidunt?</div>
+                <div class="col gray-border">
+                    <div class="plan-type"><i class="fa-solid fa-building"></i> Azienda</div>
+                    <div class="content">
+                        <div class="plan-name mb-50">
+                            <h3 class="mb-15">Enterprise</h3>
+                            <div class="price"><strong>Contattaci</strong></div>
+                        </div>
+                        <div class="plan-specifics mb-50">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> 10 o più utenti</li>
+                                <li><i class="fa-solid fa-folder"></i> Soluzione personalizzabile per la tua azienda</li>
+                                <li><i class="fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                            </ul>
+                        </div>
+                        <div class="try-or-buy mb-50">
+                            <a href="#" class="button mb-20">Contattaci</a>
+                            <span>oppure <a href="#">acquista ora</a></span>
+                        </div>
+                        <hr class="mb-50">
+                        <div class="plan-details">
+                            <h4 class="mb-20">Punti salienti del piano</h4>
+                            <ul class="checkmark">
+                                <li><div>Cartelle offline su dispositivi mobili</div></li>
+                                <li><div>Servizio assistenza 24/h</div></li>
+                                <li><div>Possibilità di personalizzazione totale</div></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row debug">
-                <div class="plan-type debug"></div>
-                <div class="content debug"></div>
+            <div class="row gray-border">
+                <div class="plan-type"><i class="fa-solid fa-building"></i> Team</div>
+                <div class="content bottom flex">
+                    <div class="plan-name">
+                        <h3 class="mb-15">Enterprise</h3>
+                        <div class="price mb-50"><strong>Contatta l'ufficio vendite per i prezzi</strong></div>
+                        <div>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</div>
+                    </div>
+                    <div class="contact-us">
+                        <a href="#" class="button">Contatta l'ufficio vendite</a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- PARTNER SECTION -->
