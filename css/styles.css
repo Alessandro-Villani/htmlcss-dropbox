@@ -186,7 +186,7 @@ ul{
     /* BUSINESS PLAN SECTION */
 
     .business-plan{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .option-selection{
@@ -236,7 +236,7 @@ ul{
 
     .content {
         min-height: 200px;
-        padding: 25px 10px;
+        padding: 25px;
     }
 
     .plan-name {
@@ -245,6 +245,10 @@ ul{
 
     .period{
         color: gray;
+    }
+
+    .plan-specifics{
+        min-height: 125px;
     }
 
     .business-plan li{
@@ -296,13 +300,24 @@ ul{
     .partner figure{
         flex-basis: 60%;
         min-height: 400px;
-        background-color: blue;
+    }
+
+    .partner img{
+        width: 100%;
+        display: block;
     }
 
     .partner .description{
         flex-basis: 40%;
         min-height: 400px;
-        background-color: blueviolet;
+        padding: 40px;
+        font-size: 14px;
+    }
+
+    .button.white{
+        color: rgb(178,178,178);
+        border: 1px solid rgb(178,178,178);
+        background-color: white;
     }
 
     /* OPERATIONS SECTION */
