@@ -168,9 +168,58 @@ h2{
         background-color: cadetblue;
     }
 
-    /* CUSTOMER SECTION */
+    /* REVIEWs SECTION */
 
-    
+    .reviews > div{
+        flex-basis: calc(100%/3);
+        min-height: 600px;
+    }
+
+    .reviewers{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .reviewer-logo {
+        flex: 0 0 50%;
+        height: 50%;
+    }
+
+        /* COMPANIES BRANDS */
+
+        #designit{
+            background-color: var(--green);
+            border: 15px solid var(--lightgreen);
+        }
+
+        #asu{
+            background-color: var(--bordeaux);
+        }
+
+        #uf{
+            background-color: var(--aquablue);
+        }
+
+        #topps{
+            background-color: var(--flashyred);
+        }
+
+        #world-bicycle{
+            background-color: var(--red);
+        }
+
+        #hearst{
+            background-color: var(--skyblue);
+        }
+
+        #lonely-planet{
+            background-color: var(--darkblue);
+        }
+
+        #clear-channel{
+            background-color: var(--yellow);
+        }
+
 
 
 
