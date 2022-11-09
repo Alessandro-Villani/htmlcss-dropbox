@@ -21,6 +21,7 @@
     --red: rgb(213,0,31);
     --yellow: rgb(255,216,48);
     --gray: rgb(230,230,232);
+    --cream: rgb(245,245,245);
 }
 
 /* !GENERICS */
@@ -32,6 +33,7 @@ body{
 
 h1{
     font-size: 72px;
+    font-weight: 900;
 }
 
 h2{
@@ -83,13 +85,18 @@ ul{
     margin-bottom: 20px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
 .mb-150{
     margin-bottom: 150px;
 }
 
-.mb-50 {
-    margin-bottom: 50px;
-}
 
 .gray-border{
     border: 1px solid var(--gray);
@@ -158,6 +165,7 @@ ul{
     .jumbotron{
         background-color: var(--skyblue);
         padding-top: 100px;
+        font-size: 14px;
     }
 
     .jumbotron .container{
@@ -166,16 +174,16 @@ ul{
     }
 
     .jumbotron .row{
-        max-height: 330px;
+        max-height: 300px;
         width: 100%;
     }
 
     .jumbotron .description{
-        flex-basis: 35%;
+        flex-basis: 30%;
     }
 
     .jumbotron figure{
-        flex-basis: 65%;
+        flex-basis: 70%;
     }
 
     .jumbotron img{
@@ -344,6 +352,15 @@ ul{
         min-height: 600px;
     }
 
+    .feedback{
+        background-color: var(--cream);
+        padding: 40px;
+    }
+
+    .feedback img{
+        max-width: 50%;
+    }
+
     .reviewers{
         flex-wrap: wrap;
         align-content: flex-start;
@@ -352,6 +369,13 @@ ul{
     .reviewer-logo {
         flex: 0 0 50%;
         height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reviewers img{
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(327deg) brightness(104%) contrast(101%);
+        max-width: 50%;
     }
 
         /* COMPANIES BRANDS */
