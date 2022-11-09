@@ -1,0 +1,28 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxDropb;
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    --blue: rgb(0,97,255);
+    --skyblue: rgb(180,208,231);
+    --aquablue: rgb(0,147,206);
+    --darkblue: rgb(13,36,129);
+    --green: rgb(162,211,155);
+    --lightgreen: rgb(209,233,205);
+    --bordeaux: rgb(97,8,43);
+    --flashyred: rgb(255,28,28);
+    --red: rgb(213,0,31);
+    --yellow: rgb(255,216,48);
+}
+
+/* GENERICS */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
