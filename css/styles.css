@@ -236,6 +236,18 @@ h2{
         flex-basis: 40%;
     }
 
-    
+    /* FAQ SECTION */
+
+    .faq .row{
+        padding: 25px 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .fa-angle-down{
+        padding: 0 20px;
+    }
+
+
 
 
