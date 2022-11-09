@@ -146,5 +146,19 @@ h2{
         min-height: 200px;
     }
 
+    /* PARTNER SECTION  */
+
+    .partner figure{
+        flex-basis: 60%;
+        min-height: 400px;
+        background-color: blue;
+    }
+
+    .partner .description{
+        flex-basis: 40%;
+        min-height: 400px;
+        background-color: blueviolet;
+    }
+
 
 
