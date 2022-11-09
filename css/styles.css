@@ -168,7 +168,7 @@ h2{
         background-color: cadetblue;
     }
 
-    /* REVIEWs SECTION */
+    /* REVIEWS SECTION */
 
     .reviews > div{
         flex-basis: calc(100%/3);
@@ -220,6 +220,22 @@ h2{
             background-color: var(--yellow);
         }
 
+    /* FREE TRIAL SECTION */
 
+    .free-trial{
+        background-color: var(--skyblue);
+        color: var(--bordeaux);
+        padding: 150px 0;
+    }
+
+    .free-trial .title{
+        flex-basis: 60%;
+    }
+
+    .free-trial .action{
+        flex-basis: 40%;
+    }
+
+    
 
 
