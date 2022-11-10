@@ -21,6 +21,7 @@
     --red: rgb(213,0,31);
     --yellow: rgb(255,216,48);
     --gray: rgb(230,230,232);
+    --buttongray: rgb(178,178,178);
     --cream: rgb(245,245,245);
 }
 
@@ -96,7 +97,6 @@ ul{
 .mb-150{
     margin-bottom: 150px;
 }
-
 
 .gray-border{
     border: 1px solid var(--gray);
@@ -324,8 +324,8 @@ ul{
     }
 
     .button.white{
-        color: rgb(178,178,178);
-        border: 1px solid rgb(178,178,178);
+        color: var(--buttongray);
+        border: 1px solid var(--buttongray);
         background-color: white;
     }
 
@@ -427,6 +427,15 @@ ul{
 
     .free-trial .action{
         flex-basis: 40%;
+        font-size: 12px;
+        text-align: end;
+        padding-top: 15px;
+    }
+
+    .free-trial .button.white{
+        border: none;
+        color: black;
+        padding: 5px 25px;
     }
 
     /* FAQ SECTION */
