@@ -442,10 +442,16 @@ header a{
         padding: 25px 0;
         width: 100%;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     .fa-angle-down{
         padding: 0 20px;
+    }
+
+    .faq-answer{
+        display: none;
+        padding-bottom: 25px;
     }
 
 /* !FOOTER */
@@ -574,4 +580,12 @@ footer .fa-solid{
     100%{
         border: 10px solid rgba(255, 255, 255, 0.5);
     }
+}
+
+#faq .row:hover + .faq-answer{
+    display: block;
+}
+
+#faq .row:hover .fa-angle-down{
+    transform: rotate(180deg);
 }
