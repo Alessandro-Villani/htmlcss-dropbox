@@ -167,7 +167,7 @@ img{
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index:2;
         justify-content: space-between;
         align-items: center;
     }
@@ -375,25 +375,114 @@ img{
     .feedback{
         background-color: var(--cream);
         padding: 40px;
+        align-items: center;
+        z-index: -1;
+    }
+
+    .feedback .animation{
+        flex-basis: 30%;
+        text-align: center;
+    }
+
+    .feedback .text{
+        flex-basis: 70%;
+        padding-left: 10px;
     }
 
     .reviewers{
         flex-wrap: wrap;
         align-content: flex-start;
+        position: relative;
     }
 
-    .reviewer-logo {
+    .hidden{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: left 1s;
+        width: 100%;
+        height: 600px;
+    }
+
+    .hidden.left{
+        left: 0
+    }
+
+    .hidden .feedback{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hidden .feedback img{
+        filter: none;
+        max-width: 100%;
+        max-height: 30%;
+    }
+
+     .reviewer-logo {
         flex: 0 0 50%;
         height: 50%;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        z-index: 1;
     }
 
     .reviewers img{
         filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(327deg) brightness(104%) contrast(101%);
         max-width: 50%;
     }
+
+        /*+ SCROLLING CARD HOVER ANIMATIONS */
+
+        #designit:hover + #designit-fb{
+            z-index: 0;
+            top: 0;
+            left: 100%;
+        }
+ 
+        #asu:hover + #asu-fb{
+            z-index: 0;
+            top: 0;
+            left: 100%;
+        }
+
+        #uf:hover + #uf-fb{
+            z-index: 0;
+            top: 0;
+            left: 100%;
+        }
+
+        #topps:hover + #topps-fb{
+            z-index: 0;
+            top: 0;
+            left: 100%;
+        }
+
+        #world-bicycle:hover + #world-bicycle-fb{
+            z-index: 0;
+            top: 0;
+            left: -100%;
+        }
+
+        #hearst:hover + #hearst-fb{
+            z-index: 0;
+            top: 0;
+            left: -100%;
+        }
+
+        #lonely-planet:hover + #lonely-planet-fb{
+            z-index: 0;
+            top: 0;
+            left: -100%;
+        }
+
+        #clear-channel:hover + #clear-channel-fb{
+            z-index: 0;
+            top: 0;
+            left: -100%;
+        }        
 
         /*+ COMPANIES BRANDS */
 
@@ -594,6 +683,40 @@ footer .fa-solid{
     }
     100%{
         border: 10px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.animation .fa-image{
+    position: relative;
+    bottom: 20px;
+    animation: grow 1s infinite alternate;
+    z-index: 0;
+    }
+
+
+.animation .fa-arrow-pointer{
+    position: relative;
+    left: 15px;
+    top: 20px;
+    animation: mouseover 1s infinite alternate;
+    z-index: 0;
+}
+
+@keyframes mouseover{
+ from{
+    top: 20px;
+ }
+ to{
+    top: -40px;
+ }
+}
+
+@keyframes grow{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.5;
     }
 }
 
