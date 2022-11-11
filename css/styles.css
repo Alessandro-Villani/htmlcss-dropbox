@@ -365,6 +365,12 @@ img{
         padding: 0 15px;
     }
 
+    /*# CUSTOMERS SECTION */
+
+    #customers h2{
+        padding-right: 30%;
+    }
+
     /*# REVIEWS SECTION */
 
     #reviews > div{
@@ -556,14 +562,22 @@ img{
     }
 
     .faq-answer{
-        display: none;
-        padding-bottom: 25px;
+        max-height: 0;
+        color: transparent;
+        position: relative;
+        top: -30px;
+        transition: max-height 1s, padding 1s, color 0.5s, top 1s 0.1s;
     }
 
     #faq .row:hover + .faq-answer{
-        display: block;
+        max-height: 300px;
+        max-height: 200px;
+        color: black;
+        top: 0;
+        padding-bottom: 25px;
+        transition: max-height 1s, padding 1s, color 0.5s 0.2s, top 1s;
     }
-    
+
     #faq .row:hover .fa-angle-down{
         transform: rotate(180deg);
     }
