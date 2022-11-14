@@ -262,16 +262,24 @@ img{
 
     #business-plan .row{
         width: 100%;
-    }
-
-    #business-plan .row.flex{
-        gap: 40px;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 
     #business-plan .col{
         flex-basis: calc(100%/3);
+        padding: 0 20px;
     }
-
+    
+    #business-plan .row .col:last-child{
+        flex-basis: 100%;
+    }
+    
+    #business-plan .card{
+        height: 100%;
+    }
+    
     .plan-type{
         text-align: center;
         padding: 5px 0;
@@ -279,7 +287,6 @@ img{
     }
 
     .content {
-        min-height: 200px;
         padding: 25px;
     }
 
